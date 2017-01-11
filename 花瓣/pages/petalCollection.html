@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花瓣采集工具-花瓣</title>
+    <link rel="stylesheet" href="../css/petalCollection.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/petalCollection.js"></script>
+</head>
+<body>
+<!--导航开始-->
+<div class="nav">
+    <div class="w">
+        <div class="fl">
+            <a href="../petalIndex.html" class="logo">花瓣</a>
+        </div>
+        <div class="fr">
+            <ul>
+                <li><a href="#">关于花瓣</a></li>
+                <li><a href="#">新手入门</a></li>
+                <li class="tools"><a href="#">花瓣采集工具</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li class="last"><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--导航结束-->
+
+<!--banner开始-->
+<div class="banner">
+    <div class="w">
+        <div class="mbp">
+            <video id="mp4" class="mp4" controls="controls" width="400" height="250">
+                <source src="../video/huaban.webm"/>
+            </video>
+            <div id="cover" class="video-cover"></div>
+        </div>
+        <div class="title"></div>
+        <div class="sub-title"></div>
+    </div>
+</div>
+<!--banner结束-->
+
+<!--main开始-->
+<div class="main">
+    <div class="w">
+        <div class="units">
+            <div class="unit chrome">
+                <div class="title">
+                    Chrome 浏览器
+                    <i></i>
+                    <div class="arrow arrowUp"></div>
+                </div>
+                <div class="inner" style="display: block">
+                    <div class="software clearfix">
+                        <div class="install-area">
+                            <div class="button">安装花瓣 Chrome 扩展</div>
+                            <div class="sub">你还可以选择安装<a class="go">书签栏采集工具</a></div>
+                        </div>
+                        <h3>如何使用花瓣 Chrome 扩展？</h3>
+                        <div class="left-part"><h4>方法一</h4>
+                            <p>浏览网页时，看到页面上感兴趣的图片、网页、视频，点击右上角的花瓣图标，选择相应功能进行采集。</p><img
+                                    src="../images/about_tools_chrome_01.jpg" width="478" height="320"
+                                    data-baiduimageplus-ignore="1"></div>
+                        <div class="right-part"><h4>方法二</h4>
+                            <p>浏览网页时，把鼠标停留在你喜欢的图片上，点击右键，选择“采集到花瓣”（此方法不起作用时，推荐方法一）</p><img
+                                    src="../images/about_tools_chrome_02.jpg" width="478" height="320"
+                                    data-baiduimageplus-ignore="1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit firefox">
+                <div class="title">
+                    Firefox（火狐）浏览器
+                    <i></i>
+                    <div class="arrow"></div>
+                </div>
+                <div class="inner" style="display: none">
+                    <div class="software clearfix">
+                        <div class="install-area">
+                            <div class="button">安装花瓣 Firefox 附加组件</div>
+                            <div class="sub">你还可以选择安装<a class="go">书签栏采集工具</a></div>
+                        </div>
+                        <h3>如何使用花瓣 Firefox 附加组件</h3>
+                        <div class="left-part"><h4>方法一</h4>
+                            <p>浏览网页时，看到页面上感兴趣的图片、网页、视频，点击右上角的花瓣图标，选择相应功能进行采集。</p><img
+                                    src="../images/about_tools_firefox_01.jpg" width="478" height="320"
+                                    data-baiduimageplus-ignore="1"></div>
+                        <div class="right-part"><h4>方法二</h4>
+                            <p>浏览网页时，把鼠标停留在你喜欢的图片上，点击右键，选择“采集到花瓣”（此方法不起作用时，推荐方法一）</p><img
+                                    src="../images/about_tools_firefox_02.jpg" width="478" height="320"
+                                    data-baiduimageplus-ignore="1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit ie">
+                <div id="ie" class="title">
+                    IE 浏览器
+                    <i></i>
+                    <div class="arrow"></div>
+                </div>
+                <div class="inner" style="display: none">
+                    <div class="software clearfix">
+                        <div class="install-area">
+                            <div class="button">拖动此按钮到书签栏</div>
+                            <div class="sub">你还可以选择安装<a class="go">花瓣 IE 插件</a></div>
+                        </div>
+                        <!--<h3>如何使用花瓣 Chrome 扩展？</h3>-->
+                        <div class="left-part"><h4>使用方法</h4>
+                            <p>拖动上面的按钮到你的书签栏上。浏览网页时，点击书签栏上的“采集到花瓣”即可。</p><img
+                                    src="../images/about_tools_ie_bookmark.jpg" width="478" height="320"
+                                    data-baiduimageplus-ignore="1"></div>
+                        <div class="right-part" style="position: relative;"><h4>找不到书签栏？</h4>
+                            <p>查看以下的视频演示。</p>
+                            <video id="help" class="mp4" controls="controls" width="478" height="320">
+                                <source src="../video/petalhelp.mp4"/>
+                            </video>
+                            <!--<div id="help-cover" style="width: 478px;height: 288px;background:url(images/help.png);position: absolute;top: 80px;"></div>-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="unit other">
+                <div class="title">
+                    其它浏览器
+                    <i></i>
+                    <div class="arrow"></div>
+                </div>
+                <div class="inner" style="display: none">
+                    <div class="software clearfix">
+                        <div class="install-area">
+                            <div class="button">拖动此按钮到书签栏</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--main结束-->
+
+<!--footer-bottom开始-->
+<div class="footer-bottom">
+    <div class="w">
+        <div class="links">
+            <dl class="fl">
+                <dt><a href="#">花瓣首页</a></dt>
+                <dd><a href="#">花瓣采集工具</a></dd>
+                <dd><a href="#">花瓣官方博客</a></dd>
+            </dl>
+            <dl class="fl">
+                <dt><a href="#">联系与合作</a></dt>
+                <dd><a href="#">联系我们</a></dd>
+                <dd><a href="#">用户反馈</a></dd>
+                <dd><a href="#">花瓣LOGO标准文档</a></dd>
+            </dl>
+            <dl class="fl">
+                <dt><a href="#">移动客户端</a></dt>
+                <dd><a href="#">花瓣iPhone版</a></dd>
+                <dd><a href="#">花瓣Android版</a></dd>
+                <dd><a href="#">花瓣HD</a></dd>
+            </dl>
+            <div class="seg fr"></div>
+            <div class="about fr">
+                <h2>关注我们</h2>
+                <span>新浪微博:&nbsp;@花瓣网</span>
+                <span>官方QQ:&nbsp;188126952</span>
+                <span>官方微信:&nbsp;<i class="gfwxewm"></i></span>
+            </div>
+            <div class="seg fr"></div>
+        </div>
+    </div>
+</div>
+<!--footer-bottom结束-->
+
+<!--footer开始-->
+<div class="footer">
+    <p>&copy; Huaban 杭州纬聚网络有限公司&nbsp;|&nbsp;<a href="#">浙公网安备 33010602001878号</a></p>
+</div>
+<!--footer结束-->
+
+<!--固定按钮开始-->
+<div class="elevator">
+    <a class="goTo"></a>
+    <a class="add"></a>
+    <div class="panel">
+        <a href="javascript:void(0);" class="cj">添加采集</a>
+        <a href="javascript:void(0);" class="hb">添加画板</a>
+        <a href="javascript:void(0);" class="tool">安装采集工具</a>
+        <div class="arr-r"></div>
+    </div>
+</div>
+<!--固定按钮结束-->
+</body>
+</html>

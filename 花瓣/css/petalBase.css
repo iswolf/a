@@ -1,0 +1,459 @@
+/*设置定css的编码*/
+@charset "UTF-8";
+/*css初始化*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*去除input的框  ctrl + / */
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体"; /*新宋体*/
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*禁止缩放*/
+textarea {
+    resize: none;
+}
+
+/*让图片基线对齐*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* css骇客 */
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+/*废物利用*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.w {
+    width: 1248px;
+    margin: 0 auto;
+}
+.wm {
+    width: 1244px;
+    margin: 0 auto;
+}
+.wm2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*花瓣 弹窗 S*/
+.black-overlay, .black-overlayB {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 99;
+}
+.login_sgin {
+    width: 520px;
+    height: 261px;
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left:50%;
+    z-index: 100;
+    margin: -155px 0 0 -260px;
+    text-align: center;
+    padding: 30px 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    border-radius: 4px;
+}
+.login_sgin img {
+    display: block;
+    margin: 0 auto;
+    width: 106px;
+    height: 36px;
+}
+.login_sgin .sgin_up {
+    width: 286px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.login_sgin .sgin_up .holder {
+    width: 286px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.login_sgin .sgin_up .close {
+    position: absolute;
+    top: -100px;
+    right: -115px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background: url("../images/msg_close.png") no-repeat 10px 10px;
+}
+
+.sgin_up .holder .with-line {
+    display: block;
+    font-size: 16px;
+    color: #999;
+    margin-top: 30px;
+    position: relative;
+    /*top: 8px;*/
+    text-align: center;
+}
+
+.sgin_up .holder .with-line .one{
+    display: block;
+    position: absolute;
+    top: 8px;;
+    width: 50px;
+    border-top: 1px solid #ededed;
+}
+
+.sgin_up .holder .with-line .two {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 50px;
+    border-top: 1px solid #ededed;
+}
+
+.sgin_up .holder .button {
+    /*margin: 20px 0 20px -47px;*/
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    top: 39px;;
+    left: -15px;
+}
+
+.sgin_up .holder .button img {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    width: 64px;
+    height: 64px;
+}
+
+.sgin_up .holder .switch {
+    font-size: 16px;
+    margin-bottom: 50px;
+    display: block;
+    position: absolute;
+    top: 126px;
+    left: 69px;
+}
+
+.sgin_up .switchS {
+    position: absolute;
+    bottom: -176px;
+    right: -97px;
+}
+
+.brown-link a{
+    color: #9E7E6B;
+}
+.brown-link a:hover {
+    color: #9A0000;
+}
+
+.login_enter {
+    width: 520px;
+    background: #fff;
+    position: fixed;
+    /*display: none;*/
+    top: 280px;
+    height: 361px;
+    left: 50%;
+    margin: -155px 0 0 -260px;
+    text-align: center;
+    padding: 30px 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    border-radius: 4px;
+}
+
+.login_enter img {
+    display: block;
+    margin: 0 auto;
+    width: 106px;
+    height: 36px;
+}
+.login_enter .holder {
+    width: 286px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.login_enter .holder .close {
+    position: absolute;
+    top: -87px;
+    right: -115px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background: url("../images/msg_close.png") no-repeat 10px 10px;
+}
+
+.login_enter .holder .with-line {
+    display: block;
+    font-size: 16px;
+    color: #999;
+    margin-top: 20px;
+    position: relative;
+    /*top: 8px;*/
+    text-align: center;
+}
+
+.login_enter .holder .with-line .one{
+    display: block;
+    position: absolute;
+    top: 8px;;
+    width: 50px;
+    border-top: 1px solid #ededed;
+}
+
+.login_enter .holder .with-line .two {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 50px;
+    border-top: 1px solid #ededed;
+}
+
+.login_enter .holder .button_small {
+    margin-top: 15px;
+    margin-left: 4px;
+    width: 300px;
+}
+
+.login_enter .holder .button_small img{
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+.login_enter .holder .with-lineT {
+    display: block;
+    font-size: 16px;
+    color: #999;
+    margin-top: 20px;
+    position: relative;
+    top: 23px;
+    text-align: center;
+}
+.login_enter .holder .with-lineT .one {
+    display: block;
+    position: absolute;
+    top: 51px;;
+    width: 50px;
+    border-top: 1px solid #ededed;
+}
+.login_enter .holder .with-lineT .two {
+    display: block;
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 50px;
+    border-top: 1px solid #ededed;
+}
+.login_enter form {
+    margin-top: 28px;
+}
+.login_enter .input {
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    padding: 0 10px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 1;
+    color: #777;
+    background: #FCFCFC;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    /*width: 250px;*/
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+}
+.login_enter .btn {
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    font-family: "宋体";
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    width: 286px;
+    height: 36px;
+    margin-top: 10px;
+    background-color: #DA393C;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    border-radius: 2px;
+    border: 1px solid #C90000;
+}
+.login_enter .btn:hover {
+    opacity: .9;
+}
+.login_enter .reset-password {
+    margin-top: 10px;
+}
+.red-link {
+    color: #9A0000;
+}
+/*花瓣 弹窗 E*/
+
+/*回到顶部  S*/
+.elevator {
+    width: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.elevator .goTo,
+.elevator .add {
+    display: block;
+    width: 40px;
+    height: 36px;
+    margin-bottom: 2px;
+    background: #000 url(../images/iconsprite_btbar.png) no-repeat 8px 6px;
+    border-radius: 4px;
+    opacity: .7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.elevator .goTo{
+    display: none;
+}
+.elevator .goTo:hover,
+.elevator .add:hover{
+    opacity: .9;
+}
+
+.elevator .add {
+    background-position: 8px -34px;
+}
+
+.elevator .panel{
+    padding-top: 10px;
+    width: 143px;
+    height: 124px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    display: none;
+}
+
+.elevator .panel .arr-r{
+    position: absolute;
+    right: -6px;
+    bottom: 14px;
+    width: 6px;
+    height: 11px;
+    background: url(../images/code_arrow.png) 0 0 no-repeat;
+}
+.elevator .panel a{
+    display: block;
+    font-size: 14px;
+    height: 38px;
+    line-height:38px;
+    padding-left: 40px;
+    background: url(../images/icon_user_menu.svg) no-repeat;
+}
+.elevator .panel a:hover{
+    background-color: #f2f2f2;
+}
+.elevator .panel .cj{
+    background-position: 18px -467px;
+}
+
+.elevator .panel .hb{
+    background-position: 18px -507px;
+}
+.elevator .panel .tool{
+    background-position: 18px -67px;
+}
+/*回到顶部  E*/

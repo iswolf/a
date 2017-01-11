@@ -1,0 +1,772 @@
+﻿@charset "UTF-8";
+
+
+body {
+    font: 12px/150% "\5FAE\8F6F\96C5\9ED1", "helvetica neue", arial, sans-serif;
+    color: #666;
+    background: #fff; /*白色*/
+    /*height: 4000px;*/
+}
+
+/*headerF start*/
+#header {
+    z-index: 98;
+}
+
+#header .h-menu {
+    position: relative;
+    /*cursor: pointer;*/
+}
+
+#header .h-menu .menu-bar {
+    display: none;
+    line-height: normal;
+    position: absolute;
+    width: 270px;
+    height: 251px;
+    padding: 4px 20px 15px 20px;
+    background-color: #fff;
+    top: 62px;
+    left: -150px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+
+#header .menu-bar .mt {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+#header .menu-bar .mt a {
+    display: inline-block;
+    font-size: 16px;
+    color: #222;
+    font-weight: 700;
+    margin-right: 32px;
+}
+
+#header .menu-bar .mc {
+    padding-top: 15px;
+    height: 155px;
+    cursor: pointer;
+}
+
+#header .menu-bar .mc li {
+    float: left;
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+}
+#header .menu-bar .mc .vavy {
+    font: 700 16px/28px "";
+}
+#header .menu-bar .mc a {
+    color: #222;
+    font-size: 14px;
+}
+
+#header .menu-bar a:hover {
+    text-decoration: none;
+    color: #c90000;
+}
+
+#header .menu-bar .mb {
+    padding-left: 30px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #999;
+    position: relative;
+    border-top: 1px solid #ccc;
+}
+
+#header .menu-bar .mb a {
+    color: #999;
+    margin: 0 5px;
+}
+#header .menu-bar .mb a:hover {
+    text-decoration: underline;
+}
+#header .menu-bar .mb s {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    height: 26px;
+    width: 26px;
+    background: url(../images/menu_sprite.svg) 7px -302px no-repeat;
+    border: 1px solid #ededed;
+    cursor: pointer;
+}
+
+/*小三角*/
+#header .h-menu .menu-bar .arrow {
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    background: url(../images/menu_arrow.png) 0 0 no-repeat;
+    top: -10px;
+    left: 150px;
+}
+
+/*headerF end*/
+
+/*header start*/
+.header {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    background: 0;
+    position: fixed;
+}
+
+/*logo部分 --start*/
+.header .logo {
+    float: left;
+    width: 100px;
+    height: 48px;
+    background: url("../images/logo_wt.svg") no-repeat 0 10px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+/*logo部分 --end*/
+/*nav部分start*/
+.header .nav {
+    float: left;
+    width: 193px;
+    height: 48px;
+    font: 14px/48px "helvetica neue", arial, sans-serif;
+}
+
+.header .nav a {
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-right: 26px;
+    position: relative;
+    display: inline-block;
+    color: #EEF2F8;
+}
+
+.header .nav a:hover,
+.header .nav a.active {
+    color: #EEF2F8;
+    border-bottom: 1px solid #EEF2F8;
+}
+
+.header .nav a.new {
+    margin-right: 0;
+    width: 64px;
+}
+
+.header .nav .new i {
+    width: 30px;
+    height: 14px;
+    background: url(../images/head-sp.png) no-repeat;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+
+/*nav部分end*/
+/*menu部分 start*/
+.header .h-menu {
+    float: left;
+    width: 40px;
+}
+
+/*menu部分 end*/
+/*search部分 start*/
+.header .search {
+    float: left;
+    width: 700px;
+    height: 48px;
+    display: none;
+}
+
+/*search部分 end*/
+
+/*登录按钮 start*/
+.header .login-bar {
+    width: 124px;
+    height: 48px;
+    /*background-color: yellowgreen;*/
+    float: right;
+}
+
+.header .login-bar a {
+    display: inline-block;
+    margin-right: 8px;
+    width: 50px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.header .login-bar .log,
+.header .login-bar .reg {
+    background-color: #D9393B;
+    color: #fff;
+    border: 1px solid #C90000;
+}
+
+.header .login-bar .log:hover,
+.header .login-bar .reg:hover {
+    background-color: #F0575F;
+}
+
+/*登录按钮 end*/
+/*header end*/
+
+/*header-fixed start*/
+.header-fixed {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    background: #fff;
+    /*border-bottom: 1px solid #ECECEC;*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    position: fixed;
+}
+
+/*logo部分 --start*/
+.header-fixed .logo {
+    float: left;
+    width: 100px;
+    height: 48px;
+    background: url(../images/logoS.png) no-repeat 0 10px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+/*logo部分 --end*/
+
+/*nav部分start*/
+.header-fixed .nav {
+    float: left;
+    width: 193px;
+    height: 48px;
+    font: 14px/48px "helvetica neue", arial, sans-serif;
+}
+
+.header-fixed .nav a {
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-right: 26px;
+    position: relative;
+    display: inline-block;
+    color: #444;
+}
+
+.header-fixed .nav a:hover,
+.header-fixed .nav a.active {
+    color: #c90000;
+    border-bottom: 1px solid #c90000;
+}
+
+.header-fixed .nav a.new {
+    margin-right: 0;
+    width: 64px;
+}
+
+.header-fixed .nav .new i {
+    width: 30px;
+    height: 14px;
+    background: url(../images/head-sp.png) no-repeat;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+
+/*nav部分end*/
+/*menu部分 start*/
+.header-fixed .h-menu {
+    float: left;
+    width: 40px;
+}
+
+/*menu部分 end*/
+/*search部分 start*/
+.header-fixed .search {
+    float: left;
+    width: 700px;
+    height: 48px;
+    position: relative;
+}
+
+.header-fixed .search input {
+    width: 766px;
+    height: 32px;
+    background-color: #FAFAFA;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    color: #bbb;
+    font: 14px/32px "SimSun";
+    padding-left: 12px;
+}
+
+.header-fixed .search button {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(../images/menu_sprite.svg) -2px -102px;
+    border: 0 none;
+    left: 756px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.header-fixed .search button:hover {
+    background-position: -52px -102px;
+}
+
+/*search部分 end*/
+
+/*登录按钮 start*/
+.header-fixed .login-bar {
+    width: 124px;
+    height: 48px;
+    /*background-color: yellowgreen;*/
+    float: right;
+}
+
+.header-fixed .login-bar a {
+    display: inline-block;
+    margin-right: 8px;
+    width: 50px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.header-fixed .login-bar .log,
+.header-fixed .login-bar .reg {
+    background-color: #D9393B;
+    color: #fff;
+    border: 1px solid #C90000;
+}
+
+.header-fixed .login-bar .log:hover,
+.header-fixed .login-bar .reg:hover {
+    background-color: #F0575F;
+}
+
+/*登录按钮 end*/
+/*header end*/
+
+/*footer-bottom start*/
+.footer-bottom {
+    background-color: #333333;
+}
+
+.footer-bottom .links {
+    padding-top: 13px;
+    height: 174px;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+.footer-bottom .links dl {
+    width: 200px;
+}
+
+.footer-bottom .links dt a {
+    font: 700 normal 16px "Microsoft YaHei";
+    line-height: 44px;
+    color: #DDD;
+}
+
+.footer-bottom .links dd a {
+    line-height: 32px;
+    color: #BBB;
+}
+
+.footer-bottom .links dd a:hover {
+    color: #f7f7f7;
+}
+
+.footer-bottom .links .about {
+    padding-left: 30px;
+    width: 278px;
+    background-color: #333333;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-bottom .links .about h2 {
+    font: 700 normal 16px "Microsoft YaHei";
+    line-height: 44px;
+    color: #DDD;
+}
+
+.footer-bottom .links .about span {
+    display: block;
+    font: 400 normal 14px "Microsoft YaHei";
+    line-height: 32px;
+    color: #BBB;
+}
+
+.footer-bottom .links .about i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/about_footer_code.png);
+}
+
+.footer-bottom .links .seg {
+    margin-top: 12px;
+    width: 1px;
+    height: 162px;
+    background-color: #555555;
+}
+.footer-bottom .links .about .er{
+    position: absolute;
+    top:54px;
+    right: 20px;
+}
+/*footer-bottom end*/
+/*footer部分 start*/
+.footer {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #000;
+    color: #999;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #999;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/*footer部分 end*/
+
+
+/*banner部分 start*/
+.h-banner {
+    padding-top: 114px;
+    height: 378px;
+    /*background: url(../images/banner-bg03.jpg) no-repeat center 0;*/
+    opacity: 0.3;
+}
+
+.h-banner .title {
+    width: 540px;
+    height: 54px;
+    margin: 0 auto;
+    background: url(../images/head_title.svg) no-repeat;
+}
+
+.h-banner .search {
+    margin: 0 auto;
+    margin-top: 46px;
+    width: 558px;
+    height: 36px;
+    border-radius: 6px;
+}
+
+.h-banner .search input {
+    width: 544px;
+    height: 36px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    color: #fff;
+    font: 14px/36px "SimSun";
+    padding-left: 12px;
+    background: rgba(0, 0, 0, .15);
+    background: #000\9;
+    filter: alpha(opacity=15);
+    float: left;
+}
+
+.h-banner .search input:hover {
+    background: rgba(0, 0, 0, .25)
+}
+
+.h-banner .search button {
+    margin-left: -40px;
+    float: left;
+    width: 40px;
+    height: 36px;
+    background: url(../images/icon_search.svg) 9px 7px no-repeat;
+    border: 0 none;
+    cursor: pointer;
+}
+
+.h-banner .hotwords {
+    margin: 0 auto;
+    width: 400px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.h-banner .hotwords a {
+    color: #fff;
+}
+
+.h-banner .hotwords a:hover {
+    text-decoration: underline;
+}
+
+/*banner部分 end*/
+
+/*main部分start*/
+.main .m-title-line{
+    height: 62px;
+    line-height:62px;
+    font-size: 16px;
+    text-align: center;
+    background:url(../images/m-title-line.png) repeat-x;
+}
+.main .m-title-line span{
+    width: 96px;
+    background-color: #fff;
+    padding: 0 26px;
+    color: #999;
+    font-family: "Microsoft YaHei";
+}
+.main .m-title-line .more{
+    width: 630px;
+    height: 42px;
+}
+.main .m-title-line .more a{
+    display: inline-block;
+    margin-top:8px;
+    width: 630px;
+    height: 42px;
+    line-height:42px;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+}
+.main .m-title-line .more a:hover{
+    background-color: #f1f1f1;
+}
+/*main-nav导航 start*/
+.main .w{
+    overflow: hidden;
+}
+.main .main-category{
+    width: 1300px;
+    height: 70px;
+}
+.main .main-category a{
+    display: inline-block;
+    position: relative;
+    margin-right:12px;
+}
+.main .main-category a:hover .blur{
+    opacity: 1;
+}
+.main .main-category .blur{
+    width: 164px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 4px;
+
+    opacity: .8;
+}
+.main .main-category .title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    line-height:70px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    font-family: "\5FAE\8F6F\96C5\9ED1","helvetica neue",arial,sans-serif;
+    text-shadow: 0 1px 0 rgba(0,0,0,.3);
+}
+/*main-nav导航 end*/
+
+/*Main瀑布流 start*/
+
+/*图片样式*/
+.main .container .row .show-box{
+    float: left;
+    width: 308px;
+    height: 308px;
+    margin-right:4px;
+    margin-bottom:4px;
+    position: relative;
+}
+
+.main .container .row .show-box .avt{
+    position: absolute;
+    top:50%;
+    margin-top:-64px;
+    left: 50%;
+    margin-left:-64px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 8;
+}
+
+.main  .show-box .avt-bg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .25;
+    background: url(../images/m-show-bg01.jpg) no-repeat;
+
+}
+.main  .show-box:hover .avt-bg{
+    opacity: .2;
+}
+.main  .show-box img{
+    width: 128px;
+    height: 128px;
+}
+.main  .show-box .pic img{
+    width: 100%;
+    height: 100%;
+}
+.main  .show-box .pic img:hover{
+    opacity: .8;
+}
+.main  .show-box .fans,
+.main  .show-box .user{
+    width: 100%;
+    position: absolute;
+}
+.main  .show-box .user{
+    top:224px;
+}
+.main  .show-box .user a{
+    font-size: 18px;
+    color: #444;
+    line-height:20px;
+}
+.main  .show-box .fans{
+    top: 250px;
+}
+.
+/*作者信息*/
+.main .container .row .info{
+    position: relative;
+    background-color: #fff;
+}
+.main .container .row .info .small{
+    height: 152px;
+    margin-bottom: 4px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    opacity: .8;
+}
+.main .container .row .info .small:hover{
+    background-color: #f2f2f2;
+}
+.main .container .row .info .small i{
+    top: 21%;
+    left: -14px;
+    background-position: 0 0;
+    z-index: 10;
+}
+.main .container .row .info .small h2{
+    margin-top:60px;
+}
+.main .container .row .info .small-r{
+    height: 152px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+.main .container .row .info .small-r:hover{
+    background-color: #f2f2f2;
+}
+.main .container .row .info .small-r i{
+    top: 74%;
+    right: -14px;
+    background-position: 0 -51px;
+    z-index: 1;
+}
+.main .container .row .info i{
+    position: absolute;
+    width: 14px;
+    height: 28px;
+    background: url(../images/info_tra.svg) no-repeat;
+
+}
+.main .container .row .info h2{
+    margin-top:54px;
+    height: 26px;
+    padding:0 16px;
+}
+.main .container .row .info h2 a{
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+.main .container .row .info p{
+    font-size: 12px;
+    line-height: 1.35em;
+    padding:0 16px;
+}
+.main .container .row .info span{
+    display: inline-block;
+    margin-top: 10px;
+    padding:0 16px;
+}
+.main .container .row .info s{
+    position: absolute;
+    padding: 0 20px 5px 0;
+    width: 80px;
+    height: 40px;
+    border-bottom: 1px solid #ededed;
+    background: url(../images/box_title_sprite.svg) no-repeat;
+    text-indent: -999em;
+}
+.main  .container .row .info .small s{
+    top:10px;
+    left: 18px;
+    background-position: 0 -160px;
+}
+.main .container .row .info .small-r s{
+    top:160px;
+    right: 18px;
+    background-position: 25px 0;
+}
+/*Main瀑布流 end*/
+/*category start*/
+.category{
+    padding-bottom: 20px;
+}
+.category h2{
+    color: #444;
+    font-size: 16px;
+    line-height:31px;
+    border-bottom: 1px solid #EDEDED;
+}
+.category .mt{
+    padding-top: 30px;
+}
+.category .mt ul{
+    float: left;
+    width: 244px;
+}
+.category .mt li{
+    height: 30px;
+}
+.category .mt a{
+    font-size: 14px;
+    font-family: "\5FAE\8F6F\96C5\9ED1", "helvetica neue", arial, sans-serif;
+    color: #444;
+}
+.category a:hover{
+    text-decoration: underline;
+}
+/*category end*/
+
+/*main部分end*/

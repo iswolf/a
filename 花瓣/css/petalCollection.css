@@ -1,0 +1,492 @@
+/*CSS样式初始化*/
+html, body, ul, li, ol, dl, dd, dt, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin:0 0 .8em;
+}
+/*去除input的框  ctrl + / */
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+ul, ol {
+    list-style: none;
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体"; /*新宋体*/
+}
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/*禁止缩放*/
+textarea {
+    resize: none;
+}
+/*让图片基线对齐*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+table {
+    border-collapse: collapse;
+}
+body {
+    font-size: 14px;
+    font-family: "helvetica neue",arial,sans-serif;
+    background: #fff; /*白色*/
+    /*height: 4000px;*/
+    color: #444;
+}
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* css骇客 */
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #C81623;
+}
+/*h1, h2, h3, h4, h5, h6 {*/
+    /*text-decoration: none;*/
+    /*font-weight: normal;*/
+    /*font-size: 100%;*/
+/*}*/
+/*废物利用*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.al {
+    text-align: left;
+}
+.ac {
+    text-align: center;
+}
+.ar {
+    text-align: right;
+}
+.hide {
+    display: none;
+}
+.w {
+    width: 996px;
+    margin: 0 auto;
+}
+/*CSS样式初始化结束*/
+
+/*导航开始*/
+.nav{
+    background-color: #FFFFFF;
+    /*background-color: #ccc;*/
+}
+.nav .w{
+    height: 54px;
+}
+.nav .w .logo{
+    display: inline-block;
+    padding-left: 33px;
+    width: 62px;
+    height: 54px;
+    color: #03061F;
+    font:400 normal 28px "Microsoft YaHei";
+    line-height: 50px;
+    background: url("../images/logo1.png") no-repeat left center;
+}
+.nav .w li{
+    float: left;
+    line-height: 54px;
+    padding-left: 31px;
+}
+.nav .w .last{
+    padding-right: 18px;
+}
+.nav .w .tools a{
+    color: #C90000;
+    font-weight: 700;
+}
+.nav .w li a {
+    font: 400 normal 14px SimSun;
+    color: #222222;
+}
+.nav .w li a:hover{
+    color: #C90000;
+}
+/*导航结束*/
+
+/*banner开始*/
+.banner{
+    height: 340px;
+    background: url("../images/about_banner.jpg") no-repeat center top;
+    background-size: cover;
+}
+.banner .w{
+    position: relative;
+}
+.banner .mbp{
+    width: 528px;
+    height: 306px;
+    background: url("../images/about_tools_mac.png") 0 0 no-repeat;
+    position: absolute;
+    left: 0;
+    top: 34px;
+}
+.banner .mbp>video{
+    position: absolute;
+    left: 64px;
+    top: 20px;
+    display: block;
+}
+.banner .mbp .video-cover{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 64px;
+    top: 20px;
+    background: url(../images/about_tools_mac_inner.jpg) 0 0 no-repeat;
+    cursor: pointer;
+    z-index: 1;
+}
+.banner .mbp .video-cover:hover{
+    background: url(../images/about_tools_mac_inner.jpg) 0 -270px no-repeat;
+}
+.banner .title{
+    width: 257px;
+    height: 59px;
+    background: url("../images/petalText.png") 0 0 no-repeat;
+    position: absolute;
+    left: 530px;
+    top: 100px;
+}
+.banner .sub-title{
+    width: 415px;
+    height: 65px;
+    background: url("../images/petalTools.png") 0 0 no-repeat;
+    position: absolute;
+    left: 530px;
+    top: 160px;
+}
+/*banner结束*/
+
+/*main开始*/
+.main .units{
+    /*height: 904px;*/
+    background-color: #fff;
+    margin: 30px 0 60px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.main .units .unit .title{
+    line-height: 54px;
+    height: 54px;
+    padding-left: 30px;
+    color: #333;
+    font-size: 18px;
+    border-top: 1px solid #ededed;
+    position: relative;
+    cursor: pointer;
+    /*background-color: lightskyblue;*/
+}
+.main .units .unit .title i{
+    position: absolute;
+    left: 0;
+    top: 16px;
+    /*background: url("../petal-images/about_tools_icons.png") 0 -40px no-repeat;*/
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.main .units .chrome .title i{
+    background: url("../images/about_tools_icons.png") 0 -40px no-repeat;
+}
+.main .units .firefox .title i{
+    background: url("../images/about_tools_icons.png") 0 0 no-repeat;
+}
+.main .units .ie .title i{
+    background: url("../images/about_tools_icons.png") 0 -80px no-repeat;
+}
+.main .units .ie .inner .install-area .button{
+    background-color: #FFFFFF;
+    color: #444444;
+    border: 1px solid #DDDDDD;
+    cursor: move;
+}
+.main .units .other .title i{
+    background: url("../images/about_tools_icons.png") 0 -120px no-repeat;
+}
+.main .units .other .inner .install-area .button{
+    background-color: #FFFFFF;
+    color: #444444;
+    border: 1px solid #DDDDDD;
+    cursor: move;
+}
+.arrow{
+    width: 17px;
+    height: 9px;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    background: url("../images/about_list_arrow.png") 0 -43px no-repeat;
+}
+.arrowUp{
+    width: 17px;
+    height: 9px;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    background: url("../images/about_list_arrow.png") 0 0 no-repeat;
+}
+.main .units .inner{
+    padding-bottom: 20px;
+}
+.main .units .inner .install-area{
+    height: 184px;
+    background: #f7f7f7;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main .units .inner .install-area .button{
+    padding: 0 30px;
+    font-size: 24px;
+    background: #D53939;
+    color: #fff;
+    margin: 50px 0 15px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.main .units .inner .install-area .sub{
+    font-size: 16px;
+}
+.main .units .inner .install-area .sub a{
+    padding: 0 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main .units .inner h3{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #F2F2F2;
+    font-size: 18px;
+}
+.main .units .inner .left-part{
+    width: 480px;
+    float: left;
+}
+.main .units .inner .left-part h4{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.main .units .inner .left-part p{
+    line-height: 1.5;
+    height: 44px;
+}
+.main .units .inner .right-part{
+    margin-left: 514px;
+}
+.main .units .inner .right-part h4{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.main .units .inner .right-part p{
+    line-height: 1.5;
+    height: 44px;
+}
+/*main结束*/
+
+
+
+/*footer-bottom开始*/
+.footer-bottom {
+        background-color: #333333;
+
+    }
+
+.footer-bottom .links {
+    padding-top: 13px;
+    height: 174px;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+.footer-bottom .links dl {
+    width: 200px;
+}
+
+.footer-bottom .links dt a {
+    font: 700 normal 16px "Microsoft YaHei";
+    line-height: 44px;
+    color: #DDD;
+}
+
+.footer-bottom .links dd a {
+    line-height: 32px;
+    color: #BBB;
+}
+
+.footer-bottom .links dd a:hover {
+    color: #f7f7f7;
+}
+
+.footer-bottom .links .about {
+    padding-left: 30px;
+    width: 278px;
+    background-color: #333333;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-bottom .links .about h2 {
+    font: 700 normal 16px "Microsoft YaHei";
+    line-height: 44px;
+    color: #DDD;
+}
+
+.footer-bottom .links .about span {
+    display: block;
+    font: 400 normal 14px "Microsoft YaHei";
+    line-height: 32px;
+    color: #BBB;
+}
+
+.footer-bottom .links .about i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/about_footer_code.png);
+}
+
+.footer-bottom .links .seg {
+    margin-top: 12px;
+    width: 1px;
+    height: 162px;
+    background-color: #555555;
+}
+.footer-bottom .links .about .er{
+    position: absolute;
+    top:54px;
+    right: 20px;
+}
+/*footer-bottom结束*/
+/*footer开始*/
+.footer {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #000;
+    color: #999;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #999;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer p{
+    margin: 0;
+}
+/*footer结束*/
+
+.elevator {
+    width: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.elevator .goTo,
+.elevator .add {
+    display: block;
+    width: 40px;
+    height: 36px;
+    margin-bottom: 2px;
+    background: #000 url(../images/iconsprite_btbar.png) no-repeat 8px 6px;
+    border-radius: 4px;
+    opacity: .7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.elevator .goTo{
+    display: none;
+}
+.elevator .goTo:hover,
+.elevator .add:hover{
+    opacity: .9;
+}
+
+.elevator .add {
+    background-position: 8px -34px;
+}
+
+.elevator .panel{
+    padding-top: 10px;
+    width: 143px;
+    height: 124px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    display: none;
+}
+
+.elevator .panel .arr-r{
+    position: absolute;
+    right: -6px;
+    bottom: 14px;
+    width: 6px;
+    height: 11px;
+    background: url(../images/code_arrow.png) 0 0 no-repeat;
+}
+.elevator .panel a{
+    display: block;
+    font-size: 14px;
+    height: 38px;
+    line-height:38px;
+    padding-left: 40px;
+    background: url(../images/icon_user_menu.svg) no-repeat;
+
+}
+.elevator .panel a:hover{
+    background-color: #f2f2f2;
+}
+.elevator .panel .cj{
+    background-position: 18px -467px;
+}
+
+.elevator .panel .hb{
+    background-position: 18px -507px;
+}
+.elevator .panel .tool{
+    background-position: 18px -67px;
+}
